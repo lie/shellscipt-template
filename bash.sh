@@ -6,7 +6,7 @@ set -u
 
 readonly SCRIPT_NAME="$(basename $0)"               # Name of this script file
 readonly SCRIPT_DIR="$(cd $(dirname $0) && pwd)"    # Absolute path of a the directory of this script file
-readonly SCRIPT_FILE="${SCRIPT_DIR}/${SCRIPT_NAME}" # Absolute path of this script file
+readonly SCRIPT_PATH="${SCRIPT_DIR}/${SCRIPT_NAME}" # Absolute path of this script file
 readonly HEADER="$(basename $0): "
 readonly SPACER="${HEADER//?/ }"
 # readonly SPACER="$(echo "${HEADER}" | sed -r "s/./ /g")"
